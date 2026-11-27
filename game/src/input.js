@@ -1,14 +1,14 @@
 // Keyboard and mouse input, read once per step and then cleared.
 // Jump: Space, ArrowUp, W, or a mouse click/tap on the canvas.
 // Duck/hide: ArrowDown or S (hold to stay ducked, tap near a haystack to hide).
-// Dash: Shift. Pause: P or Escape. Mute: M. Start/restart: Space or Enter.
+// Dash: Shift. Pause: P or Escape. Mute: M. Start/restart: Space, Enter or R.
 export function createInput(canvas) {
   const held = new Set();
   const pressed = new Set();
   let pointerJump = false;
 
   function isJumpKey(code) {
-    return code === 'Space' || code === 'ArrowUp' || code === 'KeyW' || code === 'Enter';
+    return code === 'Space' || code === 'ArrowUp' || code === 'KeyW' || code === 'Enter' || code === 'KeyR';
   }
   function isDuckKey(code) {
     return code === 'ArrowDown' || code === 'KeyS';

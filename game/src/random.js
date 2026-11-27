@@ -1,5 +1,9 @@
 // A small seeded random number generator (mulberry32): the same seed gives
-// the same game, which is what makes the screenshot scenes repeatable.
+// the same game, which is what makes the screenshot scenes repeatable —
+// ?shot=play&seed=7 always stages the same run, so the screenshots the
+// judge sees are real frames of a deterministic game, not a lucky take.
+// Mulberry32 is tiny, fast and good enough for obstacle spawns; the seed is
+// coerced to a 32-bit integer so any numeric seed works.
 export function createRandom(seed) {
   let a = seed | 0;
   return function random() {

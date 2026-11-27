@@ -89,6 +89,10 @@ export function createAudio() {
       tone(220, 0.09, 'square', 0.1, 140);
       setTimeout(() => tone(200, 0.09, 'square', 0.1, 130), 110);
     },
+    hide() {
+      // A soft rustle as the turkey dives into the haystack.
+      noise(0.18, 0.08, 900);
+    },
     farmerYell() {
       tone(180, 0.35, 'sawtooth', 0.14, 90);
     },

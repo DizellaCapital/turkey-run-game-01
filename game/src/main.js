@@ -47,7 +47,7 @@ function playSound(event) {
   else if (event === EVENT_FEATHER) audio.feather();
   else if (event === EVENT_DASH) audio.dash();
   else if (event === EVENT_HIT) audio.hit();
-  else if (event === EVENT_HIDE) audio.gobble();
+  else if (event === EVENT_HIDE) { audio.gobble(); audio.hide(); }
   else if (event === EVENT_FOUND) audio.dash();
   else if (event === EVENT_STAGE) audio.stage();
   else if (event === EVENT_YELL) audio.farmerYell();
