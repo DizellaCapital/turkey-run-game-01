@@ -7,10 +7,12 @@
 //
 // The game: Gobbles the turkey runs 1200m from the farmyard through the barn
 // and the kitchen to the forest gate, outrunning Farmer Jed while jumping
-// fences and ovens, ducking thrown carving knives, hiding in haystacks and
-// eating corn. Keyboard (Space jump, Down duck/hide, Shift feather dash,
-// P pause, M mute) and mouse click, title / play / pause / caught-or-escaped
-// screens, WebAudio synth sound.
+// fences, hay bales and the oven, ducking thrown carving knives, hiding in
+// haystacks and eating corn. The farmer closes in whenever Gobbles stumbles
+// and sprints when he gets close, so corn, feather dashes and haystack hides
+// are what keep the gap open. Keyboard (Space jump, Down duck/hide, Shift
+// feather dash, P pause, M mute) and mouse click, title / play / pause /
+// caught-or-escaped screens, WebAudio synth sound.
 //
 // Serve it locally with `node serve.ts`, then open http://localhost:8080.
 // Deterministic: the same repo always hands in the same bytes — main.ts
